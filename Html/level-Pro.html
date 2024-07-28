@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 10px;
+        }
+
+        caption {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- unordered list -->
+    <ul type="square">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+    <ol type="A">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ol>
+
+    <!-- table -->
+
+    <table>
+        <caption>Student Info</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>anik</td>
+                <td>63</td>
+            </tr>
+            <tr>
+                <td>anik</td>
+                <td>55</td>
+            </tr>
+            <tr>
+                <td>anik</td>
+                <td>86</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>total Student : 3</td>
+                <td>Total Mark : 150</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <!-- from -->
+    <form action="">
+
+        <!-- radio -->
+        Pix Your Class <br>
+
+        <label for="id1">
+            Class X
+            <input type="radio" value="class X" name="class" id="id1">
+        </label>
+
+        <label for="id2">
+            Class XI
+            <input type="radio" value="class XI" name="class" id="id2">
+        </label>
+
+        <br>
+        <br>
+        <!-- checkbox -->
+        Pix Your Subjects <br>
+        <label for="id1">
+            Math
+            <input type="checkbox" value="class X" name="class" id="id1">
+        </label>
+        <label for="id1">
+            English
+            <input type="checkbox" value="class X" name="class" id="id1">
+        </label><label for="id1">
+            Bangla
+            <input type="checkbox" value="class X" name="class" id="id1">
+        </label><label for="id1">
+            Computer since
+            <input type="checkbox" value="class X" name="class" id="id1">
+        </label>
+
+        <br>
+        <br>
+        <label for="">
+            <textarea name="" id="" rows="10" cols="30" placeholder="give me feedback"></textarea>
+        </label>
+        <br>
+        <br>
+        <label for="">
+            selected Your Destination:
+        <select name="hall" id="hall" value="3">
+            <option value="delhi">Delhi</option>
+            <option value="dhaka">Dhaka</option>
+            <option selected value="mirpur">Mirpur</option>
+            <option value="nawabganj">Nawabganj</option>
+          </select>
+        </label>
+        <br>
+        <br>
+
+        <!-- iframe video link -->
+         <p>iframe video link</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ESnrn1kAD4E?si=m7QTtGBg5dpW-VoT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+         <!-- localhost video link -->
+         <p>iframe video link</p>
+        <video src="video.mp4" controls height="400" width="500"></video>
+
+
+    </form>
+
+
+</body>
+
+</html>
