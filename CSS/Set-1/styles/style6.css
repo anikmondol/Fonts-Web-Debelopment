@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    padding: 20px 0px;
+}
+
+header nav li{
+    list-style: none;
+}
+
+header nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px;
+    color: rgb(74, 3, 3);
+}
+
+header nav li a:hover{
+   background-color: rgb(3, 191, 31);
+   border-radius: 5px;
+}
+
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main .outer-div{
+    height: 300px;
+    width: 500px;
+    background-color: green;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .outer-div .inner-div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+
+}

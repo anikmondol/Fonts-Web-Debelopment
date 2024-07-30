@@ -1,0 +1,20 @@
+div{
+    height: 800px;
+    width: 800px;
+ 
+    object-fit: cover;
+    background: #ffffff url("../imge/IMG-20240716-WA0062.jpg") no-repeat center top;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(215, 83, 11);
+    flex-direction: column;
+    padding: 0px 100px;
+}
+
+div img{
+    width: 100%;
+    
+}
