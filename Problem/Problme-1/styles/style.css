@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1520px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+/* nav style */
+
+header {
+    background: linear-gradient(to left, rgb(181, 181, 228), rgb(211, 234, 211), rgb(212, 174, 174));
+}
+
+
+
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-radius: 5px;
+}
+
+
+.nav_container .nav_img {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav_container .nav_img img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+
+.nav_container .nav_item {
+    display: flex;
+    gap: 15px;
+}
+
+.nav_container .nav_item div p {
+    padding: 5px;
+}
+
+.nav_container .nav_item div p:hover {
+    background-color: rgb(213, 244, 244);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+/* banner_section */
+
+#banner_section {
+    margin: 10px 0px;
+}
+
+#banner_section .banner_container {
+    height: 90vh;
+    background-color: rgb(186, 153, 217);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+#banner_section .banner_container .banner_element {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#banner_section .banner_container .banner_element * {
+    margin-bottom: 15px;
+}
+
+
+#banner_section .banner_container .banner_element button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#banner_section .banner_container .banner_element button:hover {
+    background-color: aquamarine;
+    transition: 0.50ms;
+}
+
+/* about_section */
+
+#about_section {
+    margin: 30px 0;
+}
+
+#about_section .about_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+#about_section .about_container .text_about_container {
+    width: 50%;
+}
+
+#about_section .about_container .img_about_container {
+    width: 50%;
+}
+
+#about_section .about_container .text_about_container {
+    background: linear-gradient(to left, rgb(181, 181, 228), rgb(211, 234, 211), rgb(212, 174, 174));
+    padding: 23px;
+    border-radius: 5px;
+
+}
+
+#about_section .about_container .text_about_container button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+#about_section .about_container .text_about_container button:hover {
+    background-color: aquamarine;
+    transition: 0.50ms;
+}
+
+#about_section .about_container .text_about_container * {
+    margin-bottom: 8px;
+}
+
+#about_section .about_container .img_about_container img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* products_section */
+
+#products_section {
+    margin: 30px auto;
+}
+
+#products_section .products_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+#products_section .products_container .single_product {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+
+}
+
+#products_section .products_container .single_product:hover {
+    transform: translateY(-25px);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#products_section .products_container .single_product * {
+    margin-bottom: 10px;
+}
+
+#products_section .products_container .single_product img {
+    width: 100px;
+}
+
+#products_section .products_container .single_product button {
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid black;
+    font-weight: 600;
+
+}
+
+#products_section .products_container .single_product button:hover {
+    background-color: rgb(85, 85, 216);
+
+}
+
+
+/* mission_vision_section */
+
+#mission_vision_section {
+    margin: 30px 0;
+}
+
+#mission_vision_section .mission_vision_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+
+#mission_vision_section .mission_vision_container .mission_section {
+    width: 49%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#mission_vision_section .mission_vision_container .mission_section button {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid black;
+
+}
+
+#mission_vision_section .mission_vision_container .mission_section button:hover {
+    background-color: rgb(145, 233, 233);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#mission_vision_section .mission_vision_container .mission_section img {
+    width: 300px;
+    height: 300px;
+}
+
+#mission_vision_section .mission_vision_container .vision_section {
+    width: 49%;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#mission_vision_section .mission_vision_container .vision_section button {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+#mission_vision_section .mission_vision_container .vision_section button:hover {
+    background-color: rgb(145, 233, 233);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#mission_vision_section .mission_vision_container .vision_section img {
+    width: 300px;
+    height: 300px;
+
+}
+
+
+#mission_vision_section .mission_vision_container .vision_section *,
+#mission_vision_section .mission_vision_container .mission_section * {
+    margin-bottom: 10px;
+
+}
+
+/* our_partner_section */
+#our_partner_section {
+    margin: 30px 0;
+}
+
+#our_partner_section .partner_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+
+#our_partner_section .partner_container .single_partner_card {
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+#our_partner_section .partner_container .single_partner_card:hover {
+    transform: translateY(20px);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#our_partner_section .partner_container .single_partner_card * {
+    margin-bottom: 15px;
+}
+
+#our_partner_section .partner_container .single_partner_card img {
+    width: 110px;
+}
+
+
+#our_partner_section .partner_container .single_partner_card button {
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+/* contact_section */
+
+#contact_section {
+    margin: 30px 0;
+    margin-bottom: 80px;
+}
+
+#contact_section .contact_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contact_section .contact_container .contact_text_div {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact_section .contact_container .contact_text_div div {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#contact_section .contact_container .contact_text_div div * {
+    margin-bottom: 10px;
+}
+
+#contact_section .contact_container .contact_input_div div h3 {
+    margin-bottom: 5px;
+}
+
+#contact_section .contact_container .contact_input_div {
+    width: 38%;
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+#contact_section .contact_container .contact_input_div input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#contact_section .contact_container .contact_input_div button {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+
+}
+
+
+#contact_section .contact_container .contact_input_div button:hover {
+    background-color: aquamarine;
+
+}
+
+/* footer */
+
+footer {
+    background: linear-gradient(to left, rgb(181, 181, 228), rgb(211, 234, 211), rgb(212, 174, 174));
+    padding: 30px 0;
+}
+
+footer .footer_container {
+    text-align: center;
+}
+
+footer .footer_container p {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+
+/* responsive */
+
+
+
+@media (max-width: 768px) {
+
+
+    #about_section .about_container {
+        flex-direction: column;
+    }
+
+
+
+    #about_section .about_container .text_about_container,
+    #about_section .about_container .img_about_container {
+        width: 100%;
+    }
+
+    #products_section .products_container {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+    #mission_vision_section .mission_vision_container {
+        flex-direction: column;
+    }
+
+
+    #mission_vision_section .mission_vision_container .vision_section {
+        width: 100%;
+    }
+
+    #mission_vision_section .mission_vision_container .mission_section {
+        width: 100%;
+    }
+
+    #our_partner_section .partner_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+    }
+
+
+    #contact_section .contact_container {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+
+    #contact_section .contact_container .contact_text_div,
+    #contact_section .contact_container .contact_input_div {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+
+    .container {
+        max-width: 94%;
+        margin: 0 auto;
+    }
+
+    .nav_container .nav_img img {
+        display: none;
+    }
+
+
+    #about_section .about_container {
+        flex-direction: column;
+    }
+
+    #about_section .about_container .text_about_container,
+    #about_section .about_container .img_about_container {
+        width: 100%;
+    }
+
+    #products_section .products_container {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    #products_section .products_container .single_product:hover {
+        transform: translateY(-10px);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #mission_vision_section .mission_vision_container {
+        flex-direction: column;
+    }
+
+    #mission_vision_section .mission_vision_container .vision_section {
+        width: 100%;
+    }
+
+    #mission_vision_section .mission_vision_container .mission_section {
+        width: 100%;
+    }
+
+    #our_partner_section .partner_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+    }
+
+    #our_partner_section .partner_container .single_partner_card:hover {
+        transform: translateY(10px);
+    }
+
+    #contact_section .contact_container {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+
+    #contact_section .contact_container .contact_text_div,
+    #contact_section .contact_container .contact_input_div {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+}
